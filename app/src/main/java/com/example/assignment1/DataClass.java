@@ -42,21 +42,21 @@ public class DataClass {
         return res;
     }
 
-    public List<String> getSubject(int level,Course course){
-        List<String> res = new ArrayList<>();
-        for(int i = 0 ; i < levelList.size();i++){
-            if (levelList.get(i).level== level){
-//                res = levelList.get(i).course;
-                for (int j = 0 ; i < levelList.get(i).course.size() ;j++){
-                    if (levelList.get(i).course.get(j).equals(course)){
-                        res.add(course.name);
-                        res.add(course.subject);
-                    }
-                }
-            }
-        }
-        return res;
-    }
+//    public List<String> getSubject(int level,Course course){
+//        List<String> res = new ArrayList<>();
+//        for(int i = 0 ; i < levelList.size();i++){
+//            if (levelList.get(i).level== level){
+////                res = levelList.get(i).course;
+//                for (int j = 0 ; i < levelList.get(i).course.size() ;j++){
+//                    if (levelList.get(i).course.get(j).equals(course)){
+//                        res.add(course.name);
+//                        res.add(course.subject);
+//                    }
+//                }
+//            }
+//        }
+//        return res;
+//    }
 
 
 }
