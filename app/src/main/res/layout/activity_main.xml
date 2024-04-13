@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/photo"
     tools:context=".MainActivity">
 
 
@@ -36,11 +37,20 @@
         android:text="Class Three"
         android:textSize="34sp" />
 
+    <CheckBox
+        android:id="@+id/rem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="250px"
+        android:layout_marginTop="180px"
+        android:text="Remember me"
+        android:textSize="34sp" />
+
     <Button
         android:id="@+id/submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="350px"
+        android:layout_marginLeft="400px"
         android:layout_marginTop="300px"
         android:text="Submit"
         android:textSize="34sp" />
