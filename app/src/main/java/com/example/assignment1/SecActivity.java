@@ -4,12 +4,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -35,7 +38,7 @@ public class SecActivity extends AppCompatActivity {
         List<Course> courses = dc.getCourse(Integer.parseInt(lvl));
         Course[] arr = courses.toArray(new Course[courses.size()]);
         ArrayAdapter<Course> adapter = new ArrayAdapter<>(SecActivity.this,
-                android.R.layout.simple_list_item_1,arr);
+                R.layout.listedit,arr);
         levellist.setAdapter(adapter);
 
         levellist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
